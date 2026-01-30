@@ -1,0 +1,9 @@
+node_modules/
+.git/
+.env
+Dockerfile
+package-lock.json
+assets/images/
+*.log
+dist/
+build/
