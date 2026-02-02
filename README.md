@@ -1,6 +1,6 @@
 # Iniubong Ebong | AI & Web3 Engineer Portfolio
 
-**🚀 [Live Demo](https://google-ai-portfolio-xxxx.a.run.app)**
+**🚀 [Live Demo](https://google-ai-portfolio-6245955948.us-central1.run.app/)**
 
 ## 🎯 About This Project
 An AI-powered portfolio built for the Google AI x DEV "New Year, New You" Challenge 2026.
