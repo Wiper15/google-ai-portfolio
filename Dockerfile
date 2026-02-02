@@ -1,12 +1,13 @@
-# Use a lightweight web server as a base
 FROM nginx:alpine
 
-# Copy your website files (HTML, CSS, JS) into the web server folder
-# Replace '.' with your folder name if your files are in a subfolder like 'public'
+# Copy your portfolio files
 COPY . /usr/share/nginx/html
 
-# Expose port 80 to the internet
-EXPOSE 80
+# Replace the default Nginx config to listen on 8080
+RUN sed -i 's/listen       80;/listen       8080;/g' /etc/nginx/conf.d/default.conf
 
-# Start the web server
+# Expose 8080 to match Cloud Run's expectation
+EXPOSE 8080
+
 CMD ["nginx", "-g", "daemon off;"]
+
