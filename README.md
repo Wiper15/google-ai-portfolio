@@ -1,32 +1,9 @@
-# Iniubong Ebong | AI & Web3 Engineer Portfolio
+# 🚀 AI-Native Agentic Infrastructure
 
-**🚀 [Live Demo](https://google-ai-portfolio-6245955948.us-central1.run.app/)**
+An **AI-First DevOps Portfolio** demonstrating serverless orchestration of Gemini 3. This project serves as a live "Agent Harness" for real-time professional data synthesis, built to showcase scalable **AI Developer Experience (DevEx)** patterns.
 
-## 🎯 About This Project
-An AI-powered portfolio built for the Google AI x DEV "New Year, New You" Challenge 2026.
-
-## ✨ Features
-- ✅ Interactive AI Assistant powered by Google Gemini
-- ✅ Modern, glassmorphic UI design
-- ✅ Responsive mobile-first layout
-- ✅ Serverless deployment on Google Cloud Run
-- ✅ Real-time chat with professional resume insights
-
-## 🛠️ Tech Stack
-- **Frontend:** HTML5, Tailwind CSS, Vanilla JavaScript
-- **Backend:** Node.js, Express.js, Google Generative AI
-- **Infrastructure:** Google Cloud Run, Docker
-- **Deployment:** Cloud Build + GitHub Integration
-
-## 📋 Challenge Requirements Met
-- ✅ Deployed to Google Cloud Run (us-central1)
-- ✅ Public access enabled (unauthenticated)
-- ✅ Contest label applied: `dev-tutorial=devnewyear2026`
-- ✅ Gemini AI integration working
-- ✅ Responsive design for all devices
-
-## 🚀 Local Development
-```bash
-npm install
-npm start
-# Visit http://localhost:8080
+## 🏗️ Architecture
+- **Orchestration:** Modular `GeminiHarness` for context-aware inference.
+- **Compute:** Containerized Node.js environment on **Google Cloud Run**.
+- **Deployment:** Automated **Cloud Build** pipeline with GitHub integration.
+- **Security:** Managed via GCP Secret Manager and scoped service accounts.
