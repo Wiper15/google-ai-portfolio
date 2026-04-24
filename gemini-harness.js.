@@ -1,0 +1,36 @@
+const { GoogleGenerativeAI } = require("@google-generativeai/server");
+
+/**
+ * GeminiHarness: A professional-grade wrapper for 
+ * Google Generative AI orchestration.
+ */
+class GeminiHarness {
+    constructor(apiKey) {
+        this.genAI = new GoogleGenerativeAI(apiKey);
+        this.model = this.genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    }
+
+    // This is the "Harness" logic Polygon wants to see
+    async generateProfessionalInsight(userQuery, contextData) {
+        const systemInstruction = `
+            You are an AI Professional Agent for Iniubong Ebong. 
+            Context: ${JSON.stringify(contextData)}
+            Task: Provide technical insights based on the context above. 
+            Tone: Professional, Concise, DevOps-oriented.
+        `;
+
+        try {
+            const chat = this.model.startChat({
+                history: [{ role: "user", parts: [{ text: systemInstruction }] }],
+            });
+
+            const result = await chat.sendMessage(userQuery);
+            return result.response.text();
+        } catch (error) {
+            console.error("Harness Error:", error);
+            throw new Error("Failed to orchestrate AI inference.");
+        }
+    }
+}
+
+module.exports = GeminiHarness;
