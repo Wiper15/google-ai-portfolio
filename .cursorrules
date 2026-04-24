@@ -1,0 +1,9 @@
+{
+  "project_type": "AI-Native DevOps Portfolio",
+  "preferred_stack": ["Node.js", "Docker", "GCP"],
+  "ai_instructions": [
+    "Always prioritize security by checking IAM principles before suggesting Cloud Run changes.",
+    "When refactoring the Gemini Harness, ensure the context window is used efficiently.",
+    "Maintain the glassmorphic UI design language in any HTML/Tailwind suggestions."
+  ]
+}
